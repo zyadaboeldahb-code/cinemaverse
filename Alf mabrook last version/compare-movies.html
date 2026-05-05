@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cinemaverse-Compare Movies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+       <h2>CinemaVerse</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+         <li><a href="movies.html">Movies</a></li>
+        <li><a href="series.html">Series</a></li>
+    <li><a href="compare-movies.html">Compare</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+       <li><a href="profile.html">Profile</a></li>
+        <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">Change Theme</button>
+    </nav>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="compare-series.html" style="color: var(--text-color); text-decoration: underline;">Switch to Compare Series</a>
+    </div>
+
+    <h2 style="text-align: center; margin-top: 20px;">Movie Comparison Engine</h2>
+
+    <table class="compare-table">
+        <thead>
+            <tr>
+            <th>Feature</th>
+            <th>
+                <select id="movieSelect1" onchange="updateCompareMovie(1)">
+              <option value="White House Down" selected>White House Down</option>
+              <option value="No Time To Die">No Time To Die</option>
+                    <option value="Fast X">Fast X</option>
+                    <option value="Scream">Scream</option>
+                  <option value="Man On Fire">Man On Fire</option>
+                <option value="Bank El7az">Bank El7az</option>
+                <option value="El3ameel Sifr">El3ameel Sifr</option>
+                 <option value="Extraction">Extraction</option>
+             <option value="The Accountant">The Accountant</option>
+                        <option value="12 Strong">12 Strong</option>
+                    </select>
+                </th>
+                <th>
+            <select id="movieSelect2" onchange="updateCompareMovie(2)">
+        <option value="White House Down">White House Down</option>
+                        <option value="No Time To Die" selected>No Time To Die</option> 
+                            <option value="Fast X">Fast X</option>
+                <option value="Scream">Scream</option>
+    <option value="Man On Fire">Man On Fire</option>
+             <option value="Bank El7az">Bank El7az</option>
+   <option value="El3ameel Sifr">El3ameel Sifr</option>
+          <option value="Extraction">Extraction</option>
+                        <option value="The Accountant">The Accountant</option>
+            <option value="12 Strong">12 Strong</option>
+          </select>
+            </th>
+         </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Poster</td>
+                <td><img id="poster1" src="images/5.jpeg" class="movie-poster"></td>
+                <td><img id="poster2" src="images/6.jpeg" class="movie-poster"></td>
+                 <tr>
+                <td>Genre</td>
+       <td id="genre1">Sci-Fi</td>
+                <td id="genre2">Action / Crime</td>
+            </tr>
+      <tr>
+                <td>Director</td>
+                <td id="director1">Christopher Nolan</td>
+                <td id="director2">Christopher Nolan</td>
+            </tr>
+            <tr>
+   <td>Rating</td>
+                <td id="rating1">8.6 / 10</td>
+       <td id="rating2">9.0 / 10</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
